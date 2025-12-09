@@ -1,0 +1,7 @@
+THIS IS A PLACEHOLDER FOR THE EDUCATION CV.
+Name: Zakarya Belgaid
+Role: Educator
+Highlights:
+- 4 Years Teaching at Abou Bekr Belkaid University
+- Supervisor of 10+ Student Teams
+- MSc in Networks & Distributed Systems

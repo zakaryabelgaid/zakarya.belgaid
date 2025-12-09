@@ -1,0 +1,7 @@
+{
+    "name": "zakarya-portfolio",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "npx serve public"
+    }
+}

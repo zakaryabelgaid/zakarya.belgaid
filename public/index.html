@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakarya Belgaid | Educator & Event Planner</title>
+    <meta name="description"
+        content="Portfolio of Zakarya Belgaid - Highlighting dual expertise in Education and Event Management.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body class="theme-dark">
+    <canvas id="particle-canvas"></canvas>
+    <!-- Navigation -->
+    <nav class="glass-panel" id="main-nav">
+        <div class="logo">ZB</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#management">Management</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="role-switch-container">
+            <span class="role-label-edu">Edu</span>
+            <button id="role-toggle" aria-label="Toggle Role Mode">
+                <div class="toggle-track">
+                    <div class="toggle-thumb"></div>
+                </div>
+            </button>
+            <span class="role-label-event">Leisure</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="fullscreen-section">
+            <div class="hero-content">
+                <div class="profile-stats-wrapper">
+                    <!-- Left Stat -->
+                    <div class="stat-badge side-badge left">
+                        <span class="counter" data-target="4">0</span>+
+                        <span class="label">Years<br>Education</span>
+                    </div>
+
+                    <!-- Center Image -->
+                    <div class="profile-frame">
+                        <img src="assets/images/image.png" alt="Zakarya Belgaid" class="profile-img">
+                    </div>
+
+                    <!-- Right Stat -->
+                    <div class="stat-badge side-badge right">
+                        <span class="counter" data-target="7">0</span>+
+                        <span class="label">Years<br>Mgmt</span>
+                    </div>
+
+                    <!-- Bottom Stat -->
+                    <div class="stat-badge side-badge bottom">
+                        <span class="counter" data-target="10">0</span>+
+                        <span class="label">Years<br>Shop</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-text-content" style="text-align: center; z-index: 2; max-width: 800px; margin-top: 2rem;">
+                <h1 class="hero-title">Zakarya Belgaid</h1>
+                <div class="typewriter-container">
+                    <span class="typewriter-text" id="role-text">Educator | Event Strategist | Leader</span>
+                </div>
+                <p class="hero-bio">Dynamic and visionary professional with 7+ years of expertise in event planning,
+                    technical education, and innovation leadership.</p>
+                <div class="cta-group">
+                    <a href="#education" class="btn btn-primary">Academic Journey</a>
+                    <a href="#events" class="btn btn-secondary">Event Portfolio</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <div class="section-background chalkboard-bg"></div>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Academic Journey</h2>
+                    <div class="decoration-line gold-line"></div>
+                </header>
+
+                <div class="timeline" id="education-timeline">
+                    <!-- Temporary Lecturer -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel">
+                            <span class="date">2023 - 2025</span>
+                            <h3>Temporary Lecturer & Supervisor</h3>
+                            <p style="color: var(--edu-accent); margin-bottom: 10px;">Abou Bekr Belkaid University,
+                                Tlemcen</p>
+                            <p>Designed and delivered dynamic computer science sessions using interactive,
+                                practice-based teaching methods. Supervised 10+ student project groups, providing
+                                technical guidance and mentorship, resulting in high marks and innovative prototypes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Private Tutor -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel">
+                            <span class="date">2017 - Present</span>
+                            <h3>Private Tutor & Workshop Facilitator</h3>
+                            <p style="color: var(--edu-accent); margin-bottom: 10px;">Freelance</p>
+                            <p>Provided customized one-on-one tutoring and hosted 15+ technical workshops on
+                                Cybersecurity, Networking, and Cryptography. Delivered soft skills conferences on Time
+                                Management and Public Speaking to enhance student confidence.</p>
+                        </div>
+                    </div>
+                    <!-- MSc Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel">
+                            <span class="date">Graduated</span>
+                            <h3>MSc in Networks & Distributed Systems</h3>
+                            <p style="color: var(--edu-accent); margin-bottom: 10px;">University Abou-Bekr Belkaid</p>
+                            <p>Specialized in distributed computing and network architecture. Developed an innovative
+                                3D-printed medical cast using photogrammetry and LiDAR technologies, presented to
+                                government officials and national media.</p>
+                        </div>
+                    </div>
+                    <!-- Exchange Program -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel">
+                            <span class="date">Exchange Program</span>
+                            <h3>Computer Science Exchange</h3>
+                            <p style="color: var(--edu-accent); margin-bottom: 10px;">Lublin University of Technology,
+                                Poland</p>
+                            <p>Selected as Non-EU Student Representative. Enhanced technical presentation skills in a
+                                multicultural environment and participated in international innovation congresses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="content-section">
+            <div class="section-background spotlight-bg"></div>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Event Strategist</h2>
+                    <div class="decoration-line neon-line"></div>
+                </header>
+
+                <div class="events-grid" id="events-grid">
+                    <!-- 12E Club -->
+                    <div class="event-card glass-panel">
+                        <h3>12E Club</h3>
+                        <p class="role">Founder & President (2022-Present)</p>
+                        <p class="desc">Founded a hub for student innovation. Organized large-scale exhibitions
+                            showcasing prototypes in **Healthcare, Agriculture, and Navigation**, presenting directly to
+                            government ministers and national media outlets.</p>
+                    </div>
+                    <!-- Scorpio Club -->
+                    <div class="event-card glass-panel">
+                        <h3>Scorpio Club</h3>
+                        <p class="role">President & Event Manager (2018-2021)</p>
+                        <p class="desc">Led a massive team of **50+ members**, structuring operations into Media,
+                            Logistics, and HR departments. Successfully executed **20+ major events** including
+                            conferences and training sessions, earning the "Best Club" award.</p>
+                    </div>
+                    <!-- Ambassador -->
+                    <div class="event-card glass-panel">
+                        <h3>University Ambassador</h3>
+                        <p class="role">Representative (2019-2022)</p>
+                        <p class="desc">Selected to represent the University of Tlemcen at **5+ national innovation
+                            forums**. Acted as a key liaison for international academic exchanges and student
+                            congresses.</p>
+                    </div>
+                    <!-- Sunrise Club -->
+                    <div class="event-card glass-panel">
+                        <h3>Sunrise Club</h3>
+                        <p class="role">Founder (2016-2017)</p>
+                        <p class="desc">Pioneered a support network for **disabled students**, establishing dedicated
+                            services and organizing campus-wide awareness campaigns to foster inclusivity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Management Section -->
+        <section id="management" class="content-section">
+            <div class="section-background dashboard-bg"></div>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Management & Leadership</h2>
+                    <div class="decoration-line silver-line"></div>
+                </header>
+
+                <div class="timeline" id="management-timeline">
+                    <!-- Warehouse Manager -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel" style="border-color: var(--mgmt-accent);">
+                            <span class="date" style="background: var(--mgmt-accent);">Apr 2025 - Jun 2025</span>
+                            <h3>Warehouse Manager</h3>
+                            <p style="color: var(--mgmt-accent); margin-bottom: 10px;">Allaoui Distribution</p>
+                            <p>Managed central warehouse operations servicing the Tlemcen and Temouchent regions.
+                                Streamlined daily procedures, trained new staff on safety protocols, and optimized
+                                logistics workflows to improve efficiency.</p>
+                        </div>
+                    </div>
+                    <!-- QA Agent -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel" style="border-color: var(--mgmt-accent);">
+                            <span class="date" style="background: var(--mgmt-accent);">2019 - 2022</span>
+                            <h3>Quality Assurance Agent</h3>
+                            <p style="color: var(--mgmt-accent); margin-bottom: 10px;">Corposmart</p>
+                            <p>Conducted rigorous UI/UX testing and documented bugs for development teams. Developed
+                                standardized QA procedures that significantly improved product reliability and user
+                                satisfaction.</p>
+                        </div>
+                    </div>
+                    <!-- Leadership Impact -->
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-panel" style="border-color: var(--mgmt-accent);">
+                            <span class="date" style="background: var(--mgmt-accent);">Leadership</span>
+                            <h3>Team Director</h3>
+                            <p style="color: var(--mgmt-accent); margin-bottom: 10px;">Multiple Organizations</p>
+                            <p>Directed diverse teams of 50+ members across academic and professional settings. Fostered
+                                a culture of innovation and responsibility, mentoring junior members to become future
+                                leaders.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Stats at bottom -->
+                <div class="dashboard-layout" style="margin-top: 50px;">
+                    <div class="stat-card glass-panel" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+                        <h4>Languages Spoken</h4>
+                        <div class="lang-badges" style="flex-wrap: wrap; margin-top: 15px;">
+                            <span class="badge">Arabic (Native)</span>
+                            <span class="badge">English (C2)</span>
+                            <span class="badge">French (C1)</span>
+                            <span class="badge">German (A1)</span>
+                            <span class="badge">Japanese (A1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="footer-section">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <div class="social-links-grid">
+                    <a href="https://www.linkedin.com/in/belgaid-zakarya-028334185/" class="future-btn btn-linkedin"
+                        target="_blank">
+                        <span class="btn-content">LinkedIn</span>
+                        <div class="btn-glitch"></div>
+                    </a>
+                    <a href="mailto:zakarya.belgaid@gmail.com" class="future-btn btn-email">
+                        <span class="btn-content">Email</span>
+                        <div class="btn-glitch"></div>
+                    </a>
+                    <a href="tel:0540299820" class="future-btn btn-phone">
+                        <span class="btn-content">0540 29 98 20</span>
+                        <div class="btn-glitch"></div>
+                    </a>
+                    <a href="tel:0697984974" class="future-btn btn-phone">
+                        <span class="btn-content">0697 98 49 74</span>
+                        <div class="btn-glitch"></div>
+                    </a>
+                </div>
+
+                <footer class="main-footer" style="margin-top: 3rem;">
+                    <p>&copy; 2025 Zakarya Belgaid. All rights reserved.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

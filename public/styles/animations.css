@@ -1,0 +1,108 @@
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 5px var(--edu-accent);
+    }
+
+    50% {
+        box-shadow: 0 0 20px var(--edu-accent);
+    }
+
+    100% {
+        box-shadow: 0 0 5px var(--edu-accent);
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Utility Animations */
+.animate-fade-in {
+    opacity: 0;
+    /* Animation added via JS observer */
+}
+
+.animate-fade-in.visible {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.floating-element {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Typewriter */
+.typewriter-container {
+    display: inline-block;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: 3px solid var(--edu-accent);
+    white-space: nowrap;
+    display: inline-block;
+    width: 0;
+    /* Animation trigger handled in JS usually for re-typing, 
+       but here's a pure CSS fallback for initial load */
+    animation: typewriter 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Specific Element Animations */
+/* .profile-frame {
+     animation: pulse-glow 3s infinite; 
+} */
+
+
+
+/* Transition utility */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,103 @@
+/* Futuristic Contact Buttons */
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.future-btn {
+    position: relative;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Higher contrast */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Thicker border */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 100;
+    /* Ensure on top */
+}
+
+.btn-content {
+    position: relative;
+    z-index: 5;
+}
+
+.future-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.future-btn:hover::before {
+    left: 100%;
+}
+
+.future-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Specific button colors */
+.btn-linkedin {
+    border-color: #0077b5;
+    box-shadow: 0 0 5px rgba(0, 119, 181, 0.2);
+}
+
+.btn-linkedin:hover {
+    box-shadow: 0 0 20px rgba(0, 119, 181, 0.6);
+    border-color: #0077b5;
+}
+
+.btn-email {
+    border-color: #ea4335;
+    box-shadow: 0 0 5px rgba(234, 67, 53, 0.2);
+}
+
+.btn-email:hover {
+    box-shadow: 0 0 20px rgba(234, 67, 53, 0.6);
+    border-color: #ea4335;
+}
+
+.btn-phone {
+    border-color: #34a853;
+    box-shadow: 0 0 5px rgba(52, 168, 83, 0.2);
+}
+
+.btn-phone:hover {
+    box-shadow: 0 0 20px rgba(52, 168, 83, 0.6);
+    border-color: #34a853;
+}
+
+/* Glitch effect layer (decorative) */
+.btn-glitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
