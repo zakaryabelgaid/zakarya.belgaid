@@ -53,7 +53,12 @@ class ParticleSystem {
         // Clear and rebuild particles based on current mode
         this.particles = [];
         const config = this.configs[this.mode];
-        const count = config.count;
+        let count = config.count;
+
+        // Reduce particles on mobile
+        if (window.innerWidth < 768) {
+            count = Math.floor(count * 0.3);
+        }
 
         for (let i = 0; i < count; i++) {
             this.particles.push(new Particle(this.canvas, this.mode, config));
