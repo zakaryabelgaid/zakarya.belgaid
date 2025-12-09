@@ -220,35 +220,46 @@
 
 @media (max-width: 768px) {
 
+    /* Timeline - Left Aligned Vertical Line */
     #education .timeline::before,
     #events .timeline::before,
     #management .timeline::before {
-        left: 40px;
+        left: 20px;
+        /* Line position */
+        transform: translateX(-50%);
     }
 
     .timeline-item {
         width: 100%;
-        left: 0;
-        padding-left: 70px;
+        padding-left: 60px;
+        /* Space for line and dot */
+        padding-right: 0;
         text-align: left;
+        margin-bottom: 20px;
     }
 
-    .timeline-item:nth-child(even) {
-        left: 0;
-    }
-
+    /* Reset odd/even positioning */
+    .timeline-item:nth-child(even),
     .timeline-item:nth-child(odd) {
+        left: 0;
+        justify-content: flex-start;
         text-align: left;
     }
 
+    /* The Dot */
     .timeline-item::before {
-        left: 28px !important;
+        left: 20px !important;
+        /* Center on line */
         right: auto !important;
+        transform: translate(-50%, -50%);
+        /* Center dot exactly */
     }
 
+    /* The Connector Line */
     .timeline-item::after {
-        left: 42px !important;
-        width: 20px;
+        left: 20px !important;
+        width: 40px;
+        /* Connect dot to content */
         right: auto !important;
     }
 
