@@ -141,14 +141,19 @@ h2 {
     color: var(--edu-accent);
 }
 
-/* Role Toggle */
-.role-switch-container {
+/* Language Switch */
+.lang-switch-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#role-toggle {
+.lang-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#lang-toggle {
     background: none;
     border: none;
     cursor: pointer;
@@ -175,6 +180,13 @@ h2 {
     top: 2px;
     left: 2px;
     transition: transform 0.3s ease;
+}
+
+/* Specific state for FR page which has .fr-active class on thumb or logically handled */
+.toggle-thumb.fr-active {
+    transform: translateX(24px);
+    background: var(--event-accent);
+    /* Or just keep gold? Let's use differnt color maybe */
 }
 
 /* Hero Section */
