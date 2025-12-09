@@ -251,4 +251,25 @@
         width: 20px;
         right: auto !important;
     }
+
+    /* Mobile Background Optimizations */
+    .section-background {
+        opacity: 0.08;
+    }
+
+    .chalkboard-bg {
+        /* Remove texture, keep simple gradient or solid */
+        background: #1a1d21;
+    }
+
+    .spotlight-bg {
+        /* Softer, centered spotlight */
+        background: radial-gradient(circle at 50% 50%, rgba(106, 27, 154, 0.25), transparent 70%);
+    }
+
+    .dashboard-bg {
+        /* Remove grid lines */
+        background-image: none;
+        background-color: #0d121f;
+    }
 }
